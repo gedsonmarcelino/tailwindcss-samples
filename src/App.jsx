@@ -1,39 +1,19 @@
-import { useState } from 'react';
-
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-
-import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="page">
-      <div className="card">
-        <img
-          className="image"
-          src="https://lmpixels.com/demo/breezycv/dark/1/img/main_photo.jpg"
-          width="200"
-        />
+    <div className="flex flex-col items-center justify-center text-left h-full p-5 bg-slate-100;">
+      <div>
+        <h1 className="text-2xl mb-3 font-medium">Pages:</h1>
 
-        <h1 className="title">Alex Smith</h1>
-        <p className="subtitle">Web Designer</p>
-
-        <div className="social-networks">
-          <a href="">
-            <FaLinkedinIn />
-          </a>
-          <a href="">
-            <FaFacebookF />
-          </a>
-          <a href="">
-            <FaTwitter />
-          </a>
-        </div>
-
-        <button className="button">Download CV</button>
-
-        <footer className="footer">2020 All rights reserved</footer>
+        <ul className="list-disc pl-6">
+          <li>
+            <Link className="text-blue-500 hover:underline" to="/profile">
+              Profile
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

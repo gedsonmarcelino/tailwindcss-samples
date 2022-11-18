@@ -1,21 +1,38 @@
-import React from 'react';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+import './index.css';
 
 export const Profile = () => {
   return (
-    <div className="container">
-      <div className="bg-black text-white px-4 py-4">
-        <h1 className="">Alex Smith</h1>
-        <p>Web Designer</p>
+    <div className="page-profile">
+      <div className="card">
+        <Link to="/">
+          <img
+            className="image"
+            src="https://lmpixels.com/demo/breezycv/dark/1/img/main_photo.jpg"
+            width="200"
+          />
+        </Link>
 
-        <div className="social-networs">
-          <a href="">linkedin</a>
-          <a href="">facebook</a>
-          <a href="">twitter</a>
+        <h1 className="title">Alex Smith</h1>
+        <p className="subtitle">Web Designer</p>
+
+        <div className="social-networks">
+          <a href="">
+            <FaLinkedinIn />
+          </a>
+          <a href="">
+            <FaFacebookF />
+          </a>
+          <a href="">
+            <FaTwitter />
+          </a>
         </div>
 
-        <button>Download CV</button>
+        <button className="button">Download CV</button>
 
-        <footer>2020 All rights reserved</footer>
+        <footer className="footer">2020 All rights reserved</footer>
       </div>
     </div>
   );
