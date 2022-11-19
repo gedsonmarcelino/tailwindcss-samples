@@ -14,8 +14,8 @@ function App() {
             </Link>
           </li>
           <li>
-            <Link className="text-blue-500 hover:underline" to="/responsive">
-              Responsive
+            <Link className="text-blue-500 hover:underline" to="/mobile">
+              Mobile
             </Link>
           </li>
         </ul>

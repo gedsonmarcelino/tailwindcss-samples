@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ScrollContainer from 'react-indiana-drag-scroll';
+import { Link } from 'react-router-dom';
 
 import {
   FaRegBell,
@@ -17,7 +18,9 @@ export const Mobile = () => {
       <div className="max-w-sm flex justify-center bg-white">
         <div className="container p-6 pb-12 max-w-sm">
           <header className="flex flex-row items-center place-content-between mb-5">
-            <h1 className="text-3xl font-medium ">RoomClub</h1>
+            <Link to="/">
+              <h1 className="text-3xl font-medium ">RoomClub</h1>
+            </Link>
             <img className="rounded" src="https://picsum.photos/id/237/50/50" />
           </header>
           <div className="flex flex-row place-content-between items-center mb-10 gap-2">

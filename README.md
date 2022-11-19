@@ -7,7 +7,8 @@ Sample of configuration using follow libraries/technologies:
 
 ## Route Pages
 
-| Route    | Description  |
-| -------- | ------------ |
-| /        | Index Page   |
-| /profile | Profile Page |
+| Route    | Description                      |
+| -------- | -------------------------------- |
+| /        | Index Page                       |
+| /profile | Profile Page using @apply in css |
+| /mobile  | Mobile Page                      |
