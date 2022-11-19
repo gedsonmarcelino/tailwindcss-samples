@@ -10,7 +10,12 @@ function App() {
         <ul className="list-disc pl-6">
           <li>
             <Link className="text-blue-500 hover:underline" to="/profile">
-              Profile
+              Profile - apply
+            </Link>
+          </li>
+          <li>
+            <Link className="text-blue-500 hover:underline" to="/responsive">
+              Responsive
             </Link>
           </li>
         </ul>

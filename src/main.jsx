@@ -7,6 +7,7 @@ import App from './App';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 
 import './index.css';
+import { Mobile } from './pages/Mobile';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Profile />,
+  },
+  {
+    path: '/mobile',
+    element: <Mobile />,
   },
 ]);
 
